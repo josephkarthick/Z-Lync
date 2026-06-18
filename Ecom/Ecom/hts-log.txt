@@ -1,0 +1,37 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 15 Jun 2026 23:00:28 at https://themes.pixelstrap.com/fastkart/front-end/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*https://themes.pixelstrap.com/fastkart/front-end/index.html*
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f0#f -F  -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://themes.pixelstrap.com/fastkart/front-end/index.html -O1 "C:\Users\ABSPL188.AURARCM0\Desktop\Ecom\Ecom" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*https://themes.pixelstrap.com/fastkart/front-end/index.html* )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+23:02:47	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/product-color.html (from https://themes.pixelstrap.com/fastkart/front-end/index.html)
+23:02:49	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/demo-personal-portfolio.html (from https://themes.pixelstrap.com/fastkart/front-end/index.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/product-left.html (from https://themes.pixelstrap.com/fastkart/front-end/index.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/assets/css/ajax-loader.gif (from https://themes.pixelstrap.com/fastkart/assets/css/style.css)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/assets/css/fonts/slick.eot (from https://themes.pixelstrap.com/fastkart/assets/css/style.css)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/assets/css/fonts/slick.eot? (from https://themes.pixelstrap.com/fastkart/assets/css/style.css)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/assets/css/fonts/slick.woff (from https://themes.pixelstrap.com/fastkart/assets/css/style.css)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/assets/css/fonts/slick.ttf (from https://themes.pixelstrap.com/fastkart/assets/css/style.css)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/assets/css/fonts/slick.svg (from https://themes.pixelstrap.com/fastkart/assets/css/style.css)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/assets/images/grocery/banner/11-bg.png (from https://themes.pixelstrap.com/fastkart/assets/css/style.css)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/product-left.htm (from https://themes.pixelstrap.com/fastkart/front-end/product-left-thumbnail.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/www.facebook.com (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/www.goolge.com (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/www.twitter.com (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/www.instagram.com (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/www.pinterest.com (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/term_condition.html (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/careers.html (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/vegetables-demo.html (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/spice-demo.html (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/bags-demo.html (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/bakery-demo.html (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/grocery-demo.html (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Warning: 	Retry after error -4 (No data (connection closed)) at link https://themes.pixelstrap.com/fastkart/assets/images/icon/paymant/master-card.png (from https://themes.pixelstrap.com/fastkart/front-end/index-4.html)
+23:03:01	Warning: 	Retry after error -4 (No data (connection closed)) at link https://themes.pixelstrap.com/fastkart/assets/images/fashion/product/1.jpg (from https://themes.pixelstrap.com/fastkart/front-end/index-9.html)
+23:03:01	Error: 	"Not Found" (404) at link https://themes.pixelstrap.com/fastkart/front-end/product.left-sidebar.html (from https://themes.pixelstrap.com/fastkart/front-end/order-success.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 34 seconds : 617 links scanned, 590 files written (51282822 bytes overall) [36137112 bytes received at 234656 bytes/sec], 17022878 bytes transferred using HTTP compression in 104 files, ratio 9%, 41.1 requests per connection
+(24 errors, 2 warnings, 0 messages)
