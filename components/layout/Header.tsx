@@ -25,10 +25,10 @@ const filteredProducts = garbageBags.filter((product) =>
         <div className="row">
           <div className="col-xxl-3 d-xxl-block d-none">
             <div className="top-left-header">
-              <i className="iconly-Location icli text-white" />
-              <span className="text-white">
-                1418 Riverwood Drive, CA 96052, US
-              </span>
+             
+<span className="text-white">
+  Available Across India on Amazon
+</span>
             </div>
           </div>
           <div className="col-xxl-6 col-lg-9 d-lg-block d-none">
@@ -36,20 +36,18 @@ const filteredProducts = garbageBags.filter((product) =>
               <div className="notification-slider">
                 <div>
                   <div className="timer-notification">
-                    <h6>
-                      <strong className="me-1">Welcome to Fastkart!</strong>Wrap
-                      new offers/gift every single day on Weekends.
-                      <strong className="ms-1">New Coupon Code: Fast024</strong>
-                    </h6>
+<h6>
+  <strong className="me-1">Welcome to VaisKart!</strong>
+  Discover premium quality products at unbeatable prices every day.
+  <strong className="ms-1">Special discounts available for bulk orders.</strong>
+</h6>
                   </div>
                 </div>
                 <div>
                   <div className="timer-notification">
                     <h6>
-                      Something you love is now on sale!
-                      <a href="shop-left-sidebar.html" className="text-white">
-                        Buy Now !
-                      </a>
+                        Start Shopping Today!
+
                     </h6>
                   </div>
                 </div>
@@ -75,19 +73,7 @@ const filteredProducts = garbageBags.filter((product) =>
                 </span>
               </button>
               <div className="middle-box">
-                <div className="location-box">
-                  <button
-                    className="btn location-button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#locationModal"
-                  >
-                    <span className="location-arrow">
-                      <i data-feather="map-pin" />
-                    </span>
-                    <span className="locat-name">Your Location</span>
-                    <i className="fa-solid fa-angle-down" />
-                  </button>
-                </div>
+
                 <div className="search-box">
                   <div className="input-group">
 <div className="position-relative">
@@ -124,13 +110,13 @@ const filteredProducts = garbageBags.filter((product) =>
           href={`/product/${product.id}`}
           className="d-flex align-items-center p-2 border-bottom text-decoration-none"
         >
-          <img
-            src={product.image}
-            alt={product.name}
-            width="50"
-            height="50"
-            className="me-2"
-          />
+<img
+  src={`/assets/images/product/${product.id}/1.webp`}
+  alt={product.name}
+  width="50"
+  height="50"
+  className="me-2"
+/>
 
           <div>
             <div>{product.name}</div>

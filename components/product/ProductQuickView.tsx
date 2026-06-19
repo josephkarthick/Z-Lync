@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useCart } from "@/components/cart/CartContext";
 
 interface ProductQuickViewProps {
@@ -115,12 +117,12 @@ export default function ProductQuickView({
 							Add To Cart
 						</button>
 						
-						<a
+						<Link
 							href={`/product/${product.id}`}
 							className="btn theme-bg-color view-button icon text-white fw-bold btn-md"
 						>
 							View More Details
-						</a>
+						</Link>
 						
 						</div>
 

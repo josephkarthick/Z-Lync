@@ -5,10 +5,12 @@ import { useState } from "react";
 import ProductCard from "./ProductCard";
 import ProductQuickView from "./ProductQuickView";
 
+import { useCart } from "@/components/cart/CartContext";
+
 type Product = {
   id: number;
   name: string;
-  image: string;
+  images?: string[];
   weight: string;
   price: number;
 };
@@ -17,17 +19,17 @@ interface ProductSectionProps {
   title: string;
   description: string;
   products: Product[];
-  onAddToCart: (product: Product) => void;
 }
 
 export default function ProductSection({
   title,
   description,
   products,
-  onAddToCart,
 }: ProductSectionProps) {
   const [selectedProduct, setSelectedProduct] =
     useState<Product | null>(null);
+
+  const { addToCart } = useCart();
 
   return (
     <>
@@ -45,11 +47,11 @@ export default function ProductSection({
             <ProductCard
               product={product}
               setSelectedProduct={setSelectedProduct}
-              onAddToCart={onAddToCart}
+              onAddToCart={addToCart}
             />
           </div>
         ))}
-      </div>	
+      </div>
 
       <ProductQuickView product={selectedProduct} />
     </>

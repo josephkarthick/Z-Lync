@@ -1,8 +1,11 @@
+"use client";
+import Link from "next/link";
+
 interface ProductCardProps {
   product: {
     id: number;
     name: string;
-    image: string;
+    images?: string[];
     weight: string;
     price: number;
   };
@@ -16,24 +19,26 @@ export default function ProductCard({
   setSelectedProduct,
   onAddToCart,
 }: ProductCardProps) {
+  const productImage =
+    product.images?.[0] ||
+    "/assets/images/no-image.png";
+
   return (
     <div className="product-box product-white-bg wow fadeIn">
       <div className="product-image">
-        <a href={`/product/${product.slug}`}>
+        <Link href={`/product/${product.id}`}>
           <img
-            src={product.image}
+            src={productImage}
             className="img-fluid blur-up lazyload"
             alt={product.name}
           />
-        </a>
+        </Link>
       </div>
 
       <div className="product-detail position-relative">
-       <a href={`/product/${product.slug}`}>
-          <h6 className="name">
-            {product.name}
-          </h6>
-        </a>
+        <Link href={`/product/${product.id}`}>
+          <h6 className="name">{product.name}</h6>
+        </Link>
 
         <h6 className="sold weight text-content fw-normal">
           {product.weight}
@@ -43,7 +48,7 @@ export default function ProductCard({
           ₹ {product.price}
         </h6>
 
-        {/* Quick View Button */}
+        {/* Quick View */}
         <div className="quick-view-eye">
           <button
             type="button"
@@ -56,7 +61,7 @@ export default function ProductCard({
           </button>
         </div>
 
-        {/* Add To Cart Button */}
+        {/* Add To Cart */}
         <div className="add-to-cart-btn-2 addtocart_btn">
           <button
             className="btn addcart-button btn buy-button"

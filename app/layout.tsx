@@ -4,6 +4,8 @@ import "./globals.css";
 import "@/public/assets/css/animate.min.css";
 import "@/public/assets/css/bulk-style.css";
 import "@/public/assets/css/vendors/animate.css";
+
+
 import Header from "@/components/layout/Header";
 import Sidebar from "@/components/layout/Sidebar";
 import { CartProvider } from "@/components/cart/CartContext";
@@ -14,8 +16,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "On-demand Last-Mile Delivery",
-  description: "Z-Lync Logistics Platform",
+  title: "VaisKart",
+  description: "Premium Garbage Bags",
   icons: {
     icon: "/assets/images/favicon/6.png",
   },
@@ -23,11 +25,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Template CSS */}
         <link
@@ -41,7 +43,10 @@ export default function RootLayout({
         />
 
         {/* Google Fonts */}
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+        />
 
         <link
           href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
@@ -75,145 +80,152 @@ export default function RootLayout({
         />
       </head>
 
-<body className="theme-color-4 bg-gradient-color">
-  <CartProvider>
+      <body className="theme-color-4 bg-gradient-color">
+        <CartProvider>
 
-    <Header />
 
-      <section className="product-section pt-0">
-			<div className="container-fluid p-0">
-				<div className="custom-row">
-		
-					<Sidebar />
-			
-					<div className="content-col">
-					{children}
-					</div>
-	
-			</div>
-		</div>
-	</section>
-    <ToastContainer
-      position="top-right"
-      autoClose={2000}
-      hideProgressBar={false}
-      newestOnTop
-      closeOnClick
-      pauseOnHover
-      draggable
-      theme="light"
-    />
+          {/* Global Header */}
+          <Header />
 
-  </CartProvider>
+          {/* Global Sidebar + Content */}
+          <section className="product-section pt-0">
+            <div className="container-fluid p-0">
+              <div className="custom-row">
 
-  {/* jQuery */}
-  <Script
-    src="/assets/js/jquery-3.6.0.min.js"
-    strategy="afterInteractive"
-  />
+                <Sidebar />
 
-  <Script
-    src="/assets/js/jquery-ui.min.js"
-    strategy="afterInteractive"
-  />
+                <div className="content-col min-vh-100">
+                  {children}
+                </div>
 
-  {/* Bootstrap */}
-  <Script
-    src="/assets/js/bootstrap/bootstrap.bundle.min.js"
-    strategy="afterInteractive"
-  />
+              </div>
+            </div>
+          </section>
 
-  <Script
-    src="/assets/js/bootstrap/bootstrap-notify.min.js"
-    strategy="afterInteractive"
-  />
+          {/* Toast */}
+          <ToastContainer
+            position="top-right"
+            autoClose={2000}
+            hideProgressBar={false}
+            newestOnTop
+            closeOnClick
+            pauseOnHover
+            draggable
+            theme="light"
+          />
 
-  <Script
-    src="/assets/js/bootstrap/popper.min.js"
-    strategy="afterInteractive"
-  />
+        </CartProvider>
 
-  {/* Feather */}
-  <Script
-    src="/assets/js/feather/feather.min.js"
-    strategy="afterInteractive"
-  />
+        {/* jQuery */}
+        <Script
+          src="/assets/js/jquery-3.6.0.min.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    src="/assets/js/feather/feather-icon.js"
-    strategy="afterInteractive"
-  />
+        <Script
+          src="/assets/js/jquery-ui.min.js"
+          strategy="afterInteractive"
+        />
 
-  {/* Plugins */}
-  <Script
-    src="/assets/js/lazysizes.min.js"
-    strategy="afterInteractive"
-  />
+        {/* Bootstrap */}
+        <Script
+          src="/assets/js/bootstrap/bootstrap.bundle.min.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    src="/assets/js/slick/slick.js"
-    strategy="afterInteractive"
-  />
+        <Script
+          src="/assets/js/bootstrap/bootstrap-notify.min.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    src="/assets/js/slick/slick-animation.min.js"
-    strategy="afterInteractive"
-  />
+        <Script
+          src="/assets/js/bootstrap/popper.min.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    src="/assets/js/slick/custom_slick.js"
-    strategy="afterInteractive"
-  />
+        {/* Feather Icons */}
+        <Script
+          src="/assets/js/feather/feather.min.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    src="/assets/js/auto-height.js"
-    strategy="afterInteractive"
-  />
+        <Script
+          src="/assets/js/feather/feather-icon.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    src="/assets/js/fly-cart.js"
-    strategy="afterInteractive"
-  />
+        {/* Plugins */}
+        <Script
+          src="/assets/js/lazysizes.min.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    src="/assets/js/quantity-2.js"
-    strategy="afterInteractive"
-  />
+        <Script
+          src="/assets/js/slick/slick.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    src="/assets/js/wow.min.js"
-    strategy="afterInteractive"
-  />
+        <Script
+          src="/assets/js/slick/slick-animation.min.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    src="/assets/js/custom-wow.js"
-    strategy="afterInteractive"
-  />
+        <Script
+          src="/assets/js/slick/custom_slick.js"
+          strategy="afterInteractive"
+        />
 
-  {/* Main Template JS */}
-  <Script
-    src="/assets/js/script.js"
-    strategy="afterInteractive"
-  />
+        <Script
+          src="/assets/js/auto-height.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    src="/assets/js/theme-setting.js"
-    strategy="afterInteractive"
-  />
+        <Script
+          src="/assets/js/fly-cart.js"
+          strategy="afterInteractive"
+        />
 
-  <Script
-    id="feather-init"
-    strategy="afterInteractive"
-  >
-    {`
-      window.addEventListener('load', function () {
-        if (window.feather) {
-          feather.replace();
-        }
-      });
-    `}
-  </Script>
-</body>
+        <Script
+          src="/assets/js/quantity-2.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="/assets/js/wow.min.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="/assets/js/custom-wow.js"
+          strategy="afterInteractive"
+        />
+
+        {/* Main Template JS */}
+        <Script
+          src="/assets/js/script.js"
+          strategy="afterInteractive"
+        />
+
+        <Script
+          src="/assets/js/theme-setting.js"
+          strategy="afterInteractive"
+        />
+
+        {/* Feather Init */}
+        <Script
+          id="feather-init"
+          strategy="afterInteractive"
+        >
+          {`
+            window.addEventListener('load', function () {
+              if (window.feather) {
+                feather.replace();
+              }
+            });
+          `}
+        </Script>
+
+      </body>
     </html>
   );
 }
