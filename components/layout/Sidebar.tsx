@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Sidebar() {
   return (
 
@@ -18,9 +20,9 @@ export default function Sidebar() {
                   className="blur-up lazyload"
                   alt=""
                 />
-                <h5>
-                  <a href="shop-left-sidebar.html">Vegetables &amp; Fruit</a>
-                </h5>
+<h5>
+  <Link href="/">Home</Link>
+</h5>
               </div>
             </li>
             <li>
@@ -31,7 +33,7 @@ export default function Sidebar() {
                   alt=""
                 />
                 <h5>
-                  <a href="shop-left-sidebar.html">Beverages</a>
+                  <Link href="/about">About</Link>
                 </h5>
               </div>
             </li>
